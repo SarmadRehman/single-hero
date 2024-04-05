@@ -14,11 +14,13 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  padding-top: 32px;
+  /* background-color: green; */
 }
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 p {
@@ -29,7 +31,7 @@ p {
 
 section {
   padding: 96px 0;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 .btn:link,
 .btn:visited {
@@ -46,9 +48,31 @@ section {
 .container {
   margin: 0 auto;
   width: 1200px;
-  background-color: red;
+  /* background-color: red; */
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: burlywood; */
 }
 header {
-  background-color: orangered;
+  /* background-color: orangered; */
   height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(hero.jpg);
+
+  background-size: cover;
+  color: #fff;
+}
+.header-container-inner {
+  width: 50%;
+  /* background-color: aquamarine; */
 }
